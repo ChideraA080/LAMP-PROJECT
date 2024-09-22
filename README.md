@@ -19,7 +19,7 @@ I configured the security group with:
 1. SSH (Port 22) for remote access.
 2. HTTP (Port 80) for web access.
 
-![Lunch Instance](./Screenshot-of-Instance-running-with-Public-IP-Address.png)
+![Lunch Instance](https://github.com/ChideraA080/LAMP-PROJECT/blob/main/LAMP/Screenshot-of-Instance-running-with-Public-IP-Address.png)
 
 ## STEP 2: Connect to the EC2 Instance
 
@@ -28,13 +28,13 @@ Use the public IP address of my EC2 instance and my private key to connect via S
 
 `ssh -i "Private-key.pem" ubuntu@my-ec2-public-ip`
 
-![ssh connect with putty](./Screenshot-of-Establishing-SSH-Open-connection-using-PUTTY.png)
+![ssh connect with putty](https://github.com/ChideraA080/LAMP-PROJECT/blob/main/LAMP/Screenshot-of-Establishing-SSH-Open-connection-using-PUTTY.png)
 ## STEP 3: Installing Apache and Updating the Firewall rules
 
 I installed Apache on my EC2 instance and updated the firewall rules to allow HTTP and HTTPS traffic.
 
-![Security group](./Screenshot-of-Security-Group-Firewalls.png)
-![browser apache default page](./Screenshot-of-Apache-Installation.png)
+![Security group](https://github.com/ChideraA080/LAMP-PROJECT/blob/main/LAMP/Screenshot-of-Security-Group-Firewalls.png)
+![browser apache default page](https://github.com/ChideraA080/LAMP-PROJECT/blob/main/LAMP/Screenshot-of-Apache-Installation.png)
 ## STEP 4: Installing MYSQL
 
 Next, I installed MYSQL on my EC2 Instance by running
@@ -142,7 +142,7 @@ Open the website on a browser using the public IP address.
 
 http://54.162.59.232
 
-![browse http port80](./Screenshot-of-Virtual-host-created-using-Apache-to-display-on-website.png)
+![browse http port80](https://github.com/ChideraA080/LAMP-PROJECT/blob/main/LAMP/Screenshot-of-Virtual-host-created-using-Apache-to-display-on-website.png)
 ##  step 7: Enable PHP on the website
 
 By default, Apache will prioritize index.html over index.php when serving web pages. This allows you to set up a temporary maintenance page with an index.html file, which visitors will see instead of the usual application page. After maintenance, you can remove or rename index.html to restore access to the application. To change this behavior, you need to edit the /etc/apache2/mods-enabled/dir.conf file and adjust the order of files listed in the DirectoryIndex directive.
@@ -183,7 +183,7 @@ phpinfo();
 
 5.  Refresh the Page
 
-![browser php versin with php page](./Screenshot-showing-Apache-can-handle-PHP-files-whe-PHP-script-was-successfully-added-and-installed.png)
+![browser php versin with php page](https://github.com/ChideraA080/LAMP-PROJECT/blob/main/LAMP/Screenshot-showing-Apache-can-handle-PHP-files-whe-PHP-script-was-successfully-added-and-installed.png)
 
  
 ## Challenges Faced
